@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ExcursMos</title>
+</head>
+
+<body>
+    <header class="text-center">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-2">
+                    XcursMos
+                </div>
+                <div class="col">
+                    <input type="text" id="search" class="form-controle" placeholder="Поиск">
+                </div>
+                <div class="col-2">
+                    <img src="/img1.webp" class="avatar-con-header mx-auto" value="аватар">
+                </div>
+            </div>
+        </div>
+        <div class="container p-3">
+            <div class="row">
+                <div class="col text-start">
+                    <a>О компании</a>
+                </div>
+                <div class="col text-start">
+                    <a>Создание маршрута</a>
+                </div>
+                <div class="col text-end">
+                    <a href="/personal_area.html">личный кабинет</a>
+                </div>
+                <div class="col text-end">
+                    <a>оставленные заявки</a>
+                </div>
+            </div>
+        </div>
+        <div class="container  p-3">
+            <div class="black-background">сообщение</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="/img1.webp" class="avatar-con-main img-fluid mx-auto" value="аватар">
+                </div>
+                <div class="col border">
+                    Тут должно быть описание компании
+                </div>
+            </div>
+        </section>
+        <section class="container block-main text-center">
+            <div class="row">
+                <div class="col">
+                    <div>Качество услуг</div>
+                    <img src="/img1.webp" class="advantages-con img-fluid mx-auto border rounded-top">
+                </div>
+                <div class="col">
+                    <div>Быстрый возврат</div>
+                    <img src="/img1.webp" class="advantages-con img-fluid mx-auto border rounded-top">
+                </div>
+                <div class="col">
+                    <div>Реальные оценки</div>
+                    <img src="/img1.webp" class="advantages-con img-fluid mx-auto border rounded-top">
+                </div>
+                <div class="col">
+                    <div>преимущества 1</div>
+                    <img src="/img1.webp" class="advantages-con img-fluid mx-auto border rounded-top">
+                </div>
+            </div>
+        </section>
+
+        <!-- ТУТ ДОЛЖЕН БЫТЬ БЛОК О ПЕШЕХОДНЫХ МАРШРУТАХ НО ПОКА ХЗ КАК ДЕЛАТЬ-->
+        <section class="container block-main">
+            <form action="" class="border p-3">
+                <div class="p-3">
+                    <label for="exampleInputEmail1" class="form-label">Откуда вы хотите начать путешествие:</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Введите адресс">
+                </div>
+                <div class="p-3">
+                    <button type="submit" class="btn btn-primary">Начать</button> <!--исправить-->
+                </div>
+                <div class="p-3 text-center">
+                    <img src="/img1.webp" class=" img-fluid mx-auto">
+                </div>
+
+            </form>
+        </section>
+        <section class="container block-main">
+            <div>
+                <h1 class="text-center">Список пешеходных маршрутов</h1>
+                <form action="" class="d-flex justify-content-between">
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Введите адресс">
+                    </div>
+                    <div class="text-end for-check">
+                        <label for="disabledSelect" class="form-label"></label>
+                        <select id="disabledSelect" class="form-select">
+                            <option>Основной объект</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="row text-center border  mt-3 row-0 col-0">
+                <div class="col border">
+                    Название
+                </div>
+                <div class="col border ">
+                    Описание
+                </div>
+                <div class="col border border-end-0">
+                    Основные объекты
+                </div>
+                <div class="col border border-start-0"></div>
+            </div>
+            <!--список для js-->
+            <div id="list">
+
+            </div>
+        </section>
+        <section class="container block-main">
+            <div>
+                <h1 class="text-center">Доступные гиды по маршруту Название маршрута</h1>
+                <form action="" class="d-flex justify-content-between">
+                    <div class="text-end for-check">
+                        <label for="disabledSelect" class="form-label"></label>
+                        <select id="disabledSelect" class="form-select">
+                            <option>Основной объект</option>
+                        </select>
+                    </div>
+                    <div class="d-flex ">
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Пароль</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                          </div>
+                          <div class="col-auto">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                          </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row text-center border  mt-3 row-0 col-0">
+                <div class="col border">
+                </div>
+                <div class="col border">
+                    ФИО
+                </div>
+                <div class="col border">
+                    Языки
+                </div>
+                <div class="col border">
+                    Опыт работы
+                </div>
+                <div class="col border">
+                    Стоимость услуг в час
+                </div>
+                <div class="col border"></div>
+            </div>
+            <!--список для js-->
+            <div id="list">
+
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <div>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Expedita voluptate molestiae
+            voluptatibus reprehenderit quasi
+            aspernatur similique molestias amet
+            corporis esse impedit at doloribus,
+            dolor placeat officia consequuntur
+            suscipit perferendis totam.
+        </div>
+    </footer>
+</body>
+
+</html>

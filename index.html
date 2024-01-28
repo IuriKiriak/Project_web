@@ -10,7 +10,7 @@
     <title>ExcursMos</title>
 </head>
 
-<body>
+<body class="fucs-background text-size">
     <header class="text-center">
         <div class="container p-3">
             <div class="row">
@@ -18,7 +18,7 @@
                     XcursMos
                 </div>
                 <div class="col">
-                    <input type="text" id="search" class="form-controle" placeholder="Поиск">
+                    <input type="text" id="search" class="sform-controle border border-dark rounded olive-background" placeholder="Поиск">
                 </div>
                 <div class="col-2">
                     <img src="/img1.webp" class="avatar-con-header mx-auto" value="аватар">
@@ -28,13 +28,10 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col text-start">
-                    <a>О компании</a>
-                </div>
-                <div class="col text-start">
                     <a>Создание маршрута</a>
                 </div>
-                <div class="col text-end">
-                    <a href="/personal_area.html">личный кабинет</a>
+                <div class="col text-center">
+                    <a href="/personal_area.html" class="button-color">личный кабинет</a>
                 </div>
                 <div class="col text-end">
                     <a>оставленные заявки</a>
@@ -42,7 +39,7 @@
             </div>
         </div>
         <div class="container  p-3">
-            <div class="black-background">сообщение</div>
+            <div class="border rounded border-dark olive-background">сообщение</div>
         </div>
     </header>
 
@@ -52,8 +49,8 @@
                 <div class="col">
                     <img src="/img1.webp" class="avatar-con-main img-fluid mx-auto" value="аватар">
                 </div>
-                <div class="col border">
-                    Тут должно быть описание компании
+                <div class="col border  border-dark rounded olive-background">
+                    Туwт должно быть описание компании
                 </div>
             </div>
         </section>
@@ -83,10 +80,10 @@
             <form action="" class="border p-3">
                 <div class="p-3">
                     <label for="exampleInputEmail1" class="form-label">Откуда вы хотите начать путешествие:</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Введите адресс">
+                    <input type="text" class="form-control border-dark olive-background" id="exampleInputEmail1" placeholder="Введите адресс">
                 </div>
                 <div class="p-3">
-                    <button type="submit" class="btn btn-primary">Начать</button> <!--исправить-->
+                    <button type="submit" class="btn btn-primary olive-background text-dark">Начать</button> <!--исправить-->
                 </div>
                 <div class="p-3 text-center">
                     <img src="/img1.webp" class=" img-fluid mx-auto">
@@ -100,27 +97,27 @@
                 <form action="" class="d-flex justify-content-between">
                     <div>
                         <label for="exampleInputEmail1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Введите адресс">
+                        <input type="text" class="form-control border-dark olive-background" id="exampleInputEmail1" placeholder="Введите адресс">
                     </div>
                     <div class="text-end for-check">
                         <label for="disabledSelect" class="form-label"></label>
-                        <select id="disabledSelect" class="form-select">
+                        <select id="disabledSelect" class="form-select border-dark olive-background">
                             <option>Основной объект</option>
                         </select>
                     </div>
                 </form>
             </div>
-            <div class="row text-center border  mt-3 row-0 col-0">
-                <div class="col border">
+            <div class="row text-center border border-dark mt-3 row-0 col-0 olive-background">
+                <div class="col border border-dark">
                     Название
                 </div>
-                <div class="col border ">
+                <div class="col border border-dark">
                     Описание
                 </div>
-                <div class="col border border-end-0">
+                <div class="col border border-dark border-end-0">
                     Основные объекты
                 </div>
-                <div class="col border border-start-0"></div>
+                <div class="col border border-dark border-start-0"></div>
             </div>
             <!--список для js-->
             <div id="list">
@@ -131,41 +128,42 @@
             <div>
                 <h1 class="text-center">Доступные гиды по маршруту Название маршрута</h1>
                 <form action="" class="d-flex justify-content-between">
-                    <div class="text-end for-check">
+                    <div class="d-flex align-self-center for-check">
                         <label for="disabledSelect" class="form-label"></label>
-                        <select id="disabledSelect" class="form-select">
+                        <select id="disabledSelect" class="form-select border-dark olive-background">
                             <option>Основной объект</option>
                         </select>
                     </div>
-                    <div class="d-flex ">
-                        <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Пароль</label>
-                          </div>
-                          <div class="col-auto">
-                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-                          </div>
-                          <div class="col-auto">
-                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-                          </div>
+                    <div class="d-flex justify-content-between align-self-center">
+                        <div class="p-1">
+                            <label for="stage" class="col-form-label">Опыт работы</label>
+                        </div>
+                        <div class="p-1">
+                            <input type="text" id="stage" class="form-control border-dark olive-background" placeholder="от">
+                        </div>
+                        <div class="p-1">
+                            <input type="text" id="stage" class="form-control border-dark olive-background" placeholder="до">
+
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="row text-center border  mt-3 row-0 col-0">
-                <div class="col border">
+            <div class="row text-center border border-dark mt-3 row-0 col-0">
+                <div class="col border border-dark">
                 </div>
-                <div class="col border">
+                <div class="col border border-dark">
                     ФИО
                 </div>
-                <div class="col border">
+                <div class="col border border-dark">
                     Языки
                 </div>
-                <div class="col border">
+                <div class="col border border-dark">
                     Опыт работы
                 </div>
-                <div class="col border">
+                <div class="col border border-dark">
                     Стоимость услуг в час
                 </div>
-                <div class="col border"></div>
+                <div class="col border border-dark"></div>
             </div>
             <!--список для js-->
             <div id="list">
@@ -173,127 +171,16 @@
             </div>
         </section>
     </main>
-    <footer class="container">
-        <div>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
-            Lorem ipsum dolor sit amet
-            consectetur adipisicing elit.
-            Expedita voluptate molestiae
-            voluptatibus reprehenderit quasi
-            aspernatur similique molestias amet
-            corporis esse impedit at doloribus,
-            dolor placeat officia consequuntur
-            suscipit perferendis totam.
+    <footer>
+        <div class="container footer-size">
+            <div class="d-flex justify-content-between">
+                <div>
+                    ExcursMos@gmail.com
+                </div>
+                <div>
+                    &copy; 2024
+                </div>
+            </div>
         </div>
     </footer>
 </body>

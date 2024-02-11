@@ -16,6 +16,10 @@ header{
     background-color: black;
 }
 
+.white-background {
+    background-color: white;
+}
+
 .block-main {
     margin-top: 100px;
 }

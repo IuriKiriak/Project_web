@@ -158,15 +158,58 @@
             </div>
         </div>
         <div class="container border border-dark modalblock-container white-background">
-            <div class="text-end p-1">
+            <div class="text-end p-1 d-flex justify-content-between align-items-center">
+                <p>Редактирование заявки</p>
                 <button class="icon-title olive-background ">
                     <i class='bx bx-window-close'></i>
                 </button>
             </div>
-            <p>Оформление заявки</p>
             <p>ФИО гида: <span id="FirstLastName">Афанасьева Полина</span></p>
             <p>Название маршрута: <span id="RouteName">Воробьевы горы</span></p>
+            <div class="d-flex gap-4">
+                    <div>
+                        <p>Дата экскурсии</p>
+                        <input type="date" class="form-control" id="StartTime">
+                    </div>
+                    <div>
+                        <p>Время начала:</p>
+                        <input type="text" class="form-control" id="StartTime">
+                    </div>
+                    <div>
+                        <p>Длительность:</p>
+                        <input type="text" class="form-control" id="Duration">
+                    </div>
+            </div>
+            <div class="col-4">
+                <p>Количество человек:</p>
+                <input type="text" class="form-control" id="Persons">
+            </div>
+            <p>Дополнительные опции:</p>
+            <div class="row">
+                <div class="col-6">
+                    <div>
+                        <input type="checkbox" class="form-check-label" id="exampleCheck1">
+                        <label for="exampleCheck1" class="form-check-label">Название опции:</label>
+                    </div>
+                    <p>Описание опции
+                        Размер скидки/надбавка
+                    </p>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <input type="checkbox" class="form-check-label" id="exampleCheck1">
+                        <label for="exampleCheck1" class="form-check-label">Название опции:</label>
+                    </div>
+                    <p>Описание опции
+                        Размер скидки/надбавка
+                    </p>
+                </div>
+            </div>
             <p>Итоговая Стоимость:<span id="price">1000</span></p>
+            <div class="d-flex justify-content-end gap-4 p-3">
+                <button class="btn btn-secondary">Отменить</button>
+                <button class="btn btn-primary">Отправить</button>
+            </div>
         </div>
     </modalblock>
 </body>

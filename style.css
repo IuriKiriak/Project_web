@@ -78,22 +78,20 @@ header{
     border-bottom: 1px solid; 
     font-weight: 700; 
     font-size: 14px; 
-    display: flex; 
   } 
    
-  .route-name { 
+  .route-name {   
     padding: 0 10px; 
-   
     border-right: 1px solid; 
     margin: 0; 
-    min-width: 330px; 
+
   } 
    
   .route-desc { 
     padding: 0 10px; 
     border-right: 1px solid; 
     margin: 0; 
-    min-width: 330px; 
+
   } 
    
   .route-object { 

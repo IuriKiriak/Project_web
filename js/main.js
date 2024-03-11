@@ -55,5 +55,5 @@ closeTripModal.onclick = (e) => {
   tripModal.classList.add("hide"); 
   tripModalCon.classList.add("hide"); 
 }; 
- 
+
 getRoutes();

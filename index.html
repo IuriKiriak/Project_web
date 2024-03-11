@@ -86,8 +86,7 @@
           </button>
           <!--исправить-->
         </div>
-        <div class="p-3 text-center">
-          <img src="/img/photo_2024-02-19_14-57-26.jpg" class="img-fluid mx-auto" />
+        <div id="map" class="map">
         </div>
       </form>
     </section>
@@ -218,7 +217,15 @@
     </div>
   </div>
 
-  <script src="/js/main.js"></script>
+  <!-- <script src="/js/main.js"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=0f7798e6-ab63-4a04-9d87-505922fcc93e&lang=ru_RU"></script>
+  <script>
+    // При успешной загрузке API доступен промис `ymaps3.ready`
+    ymaps.ready.then(() => {
+  console.log("карты зфыагружены")
+  });
+  </script>
+  <script src="/js/map.js"></script>
 </body>
 
 </html>

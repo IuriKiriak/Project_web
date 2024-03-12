@@ -82,7 +82,7 @@
         </div>
         <div class="p-3">
           <button type="submit" class="btn btn-primary olive-background text-dark" id="start-trip">
-            Начать
+            оформить заявку
           </button>
           <!--исправить-->
         </div>
@@ -110,10 +110,9 @@
       <div class="row text-center border border-dark mt-3 row-0 col-0 olive-background">
         <div class="col border border-dark">Название</div>
         <div class="col border border-dark">Описание</div>
-        <div class="col border border-dark border-end-0">
+        <div class="col border border-dark">
           Основные объекты
         </div>
-        <div class="col border border-dark border-start-0"></div>
       </div>
       <!--список для js-->
       <div class="row d-flex justify-content-center" id="route-list"></div>
@@ -143,7 +142,7 @@
           </div>
         </form>
       </div>
-      <div class="row text-center border border-dark mt-3 row-0 col-0">
+      <div class="row text-center border border-dark mt-3 row-0 col-0 olive-background">
         <div class="col border border-dark"></div>
         <div class="col border border-dark">ФИО</div>
         <div class="col border border-dark">Языки</div>
@@ -152,7 +151,7 @@
         <div class="col border border-dark"></div>
       </div>
       <!--список для js-->
-      <div id="list"></div>
+      <div id="guides-list" class="d-flex justify-content-center row text-center border border-dark mt-3 row-0 col-0"></div>
     </section>
   </main>
   <footer>
@@ -217,7 +216,7 @@
     </div>
   </div>
 
-  <!-- <script src="/js/main.js"></script> -->
+  <script src="/js/main.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=0f7798e6-ab63-4a04-9d87-505922fcc93e&lang=ru_RU"></script>
   <script>
     // При успешной загрузке API доступен промис `ymaps3.ready`
